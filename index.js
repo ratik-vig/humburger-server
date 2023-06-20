@@ -8,7 +8,7 @@ const customerController = require('./controllers/customerController')
 const app = express()
 app.use(cors())
 app.use(express.json())
-app.use(morgan())
+app.use(morgan('combined'))
 
 dotenv.config()
 
